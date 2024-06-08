@@ -1,0 +1,75 @@
+TASK-1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepTech Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to DeepTech</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="main-content">
+    <h2>About DeepTech</h2>
+    <p>A Technology is considered to be DeepTech if a considerable amount of research has gone into its development. DeepThought has researched Psychology to develop a new way of building EdTech applications.</p>
+  </section>
+  <footer>
+    <p>&copy; 2024 DeepTech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+#TAST -2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Page</title>
+  <style>
+    /* Add CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Dynamic Page</h1>
+  </header>
+  <section id="dynamic-section" class="main-content">
+    <!-- Dynamic content will be inserted here -->
+  </section>
+
+  <script>
+    // Example of dynamic functionality using JavaScript
+    window.addEventListener('DOMContentLoaded', function() {
+      const dynamicSection = document.getElementById('dynamic-section');
+
+      // Sample JSON data (replace with actual JSON objects)
+      const jsonData = [
+        { name: 'Item 1', description: 'Description for Item 1' },
+        { name: 'Item 2', description: 'Description for Item 2' },
+        { name: 'Item 3', description: 'Description for Item 3' }
+      ];
+
+      // Iterate through JSON data and create dynamic elements
+      jsonData.forEach(item => {
+        const div = document.createElement('div');
+        div.innerHTML = `
+          <h2>${item.name}</h2>
+          <p>${item.description}</p>
+        `;
+        dynamicSection.appendChild(div);
+      });
+    });
+  </script>
+</body>
+</html>
